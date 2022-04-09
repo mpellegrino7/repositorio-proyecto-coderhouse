@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+/*HEADER*/
+#header {
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#header .header__logo {
+  width: auto;
+  background-color: #fff;
+}
+#header .header__menu {
+  display: flex;
+  list-style: none;
+}
+
+#header .header__menu ul {
+  display: flex;
+  list-style: none;
+}
+
+#header .header__menu ul li {
+  margin: 0 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/*FIN HEADER*/
+
+/*MAIN*/
+#main .main__section {
+  display: grid;
+  grid-template-columns: 1 fr 1 fr;
+  grid-template-rows: 1 fr 1 fr;
+  gap: 0px;
+  justify-items: center;
+  padding: 20px;
+}
+
+.bordesRedondeados {
+  border-radius: 20%;
+}
+
+#main .fuenteParrafo {
+  font-style: oblique;
+  border-style: double;
+  font-size: larger;
+  color: white;
+  border-color: black;
+  text-align: center;
+  background-image: url(imagenes/foto-fondo-parrafo.jpg);
+  height: 200px;
+}
+
+#el-estudio .fuenteParrafo {
+  font-style: oblique;
+  border-style: double;
+  font-size: larger;
+  color: white;
+  border-color: black;
+  text-align: center;
+  background-image: url(imagenes/foto-fondo-parrafo.jpg);
+  height: 200px;
+}
+
+#el-estudio .fuente-imagen-nosotros {
+  text-align: center;
+  padding: 20px;
+}
+
+.form {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  position: relative;
+
+  width: 740px;
+  height: 498px;
+  margin: 0 auto;
+}
+
+:placeholder-shown {
+  background-color: #fff;
+}
+
+h2 {
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.ubicacionMapa {
+  text-align: right;
+  background-color: whitesmoke;
+}
+
+.ubicacionContacto {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  text-align: left;
+  background-color: whitesmoke;
+}
+
+.ubicacionRedes {
+  display: flex;
+  list-style: none;
+  background-color: whitesmoke;
+}
+
+.ubicacionRedes ul {
+  display: flex;
+  list-style: none;
+  background-color: whitesmoke;
+}
+
+/*FOOTER*/
+#footer {
+  display: flex;
+  background-color: whitesmoke;
+  justify-content: space-between;
+  height: 250px;
+  align-items: center;
+  padding: 20px;
+}
+
+.colorBoton {
+  background-color: gray;
+  text-transform: uppercase;
+}
+
+.footer__copyrigth {
+  background-color: whitesmoke;
+  text-align: center;
+  font-weight: bold;
+}
+
+#footer .estilo-lista {
+  list-style: none;
+}
+
+/*FIN FOOTER*/
+
+.grid-areas-de-practica {
+  display: grid;
+  gap: 60 px;
+  padding: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 70px;
+}
+
+.grid-areas-de-practica .imagenes-area-de-practica {
+  background-color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  padding: 10px;
+}
+
+.grid-areas-de-practica .imagenes-area-de-practica img {
+  width: 25%;
+  height: auto;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 768px) {
+  #header .header__menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #footer {
+    display: inline-block;
+    background-color: whitesmoke;
+    justify-content: space-between;
+    height: 250px;
+    align-items: center;
+    padding: 20px;
+  }
+}
