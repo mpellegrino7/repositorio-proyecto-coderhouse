@@ -196,3 +196,13 @@ h3 {
     padding: 20px;
   }
 }
+
+/*TRANSITION AREAS DE PRACTICAS*/
+main .grid-areas-de-practica .imagenes-area-de-practica {
+  transition: all 2s;
+}
+
+main .grid-areas-de-practica .imagenes-area-de-practica :hover {
+  height: 150px;
+  width: 150px;
+}
