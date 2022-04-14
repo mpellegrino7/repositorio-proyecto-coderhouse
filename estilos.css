@@ -5,8 +5,8 @@
   text-decoration: none;
 }
 /*HEADER*/
-#header {
-  display: flex;
+/* header {
+   display: flex;
   height: 100px;
   justify-content: space-between;
   align-items: center;
@@ -34,6 +34,19 @@
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
+}*/
+
+#header {
+  background-color: black;
+}
+#header .navbar-collapse {
+  justify-content: end;
+}
+/*ver porque no funciona*/
+#header .nav-bar-dark .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 1.4rem;
+  margin: 0px 10px;
 }
 
 /*FIN HEADER*/
@@ -75,7 +88,6 @@
 }
 
 #el-estudio .fuente-imagen-nosotros {
-  text-align: center;
   padding: 20px;
 }
 
@@ -87,10 +99,6 @@
   width: 740px;
   height: 498px;
   margin: 0 auto;
-}
-
-:placeholder-shown {
-  background-color: #fff;
 }
 
 h2 {
@@ -107,30 +115,6 @@ h3 {
   font-weight: bold;
 }
 
-.ubicacionMapa {
-  text-align: right;
-  background-color: whitesmoke;
-}
-
-.ubicacionContacto {
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
-  text-align: left;
-  background-color: whitesmoke;
-}
-
-.ubicacionRedes {
-  display: flex;
-  list-style: none;
-  background-color: whitesmoke;
-}
-
-.ubicacionRedes ul {
-  display: flex;
-  list-style: none;
-  background-color: whitesmoke;
-}
-
 /*FOOTER*/
 #footer {
   display: flex;
@@ -138,12 +122,37 @@ h3 {
   justify-content: space-between;
   height: 250px;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
+  margin: 0px;
 }
 
-.colorBoton {
-  background-color: gray;
-  text-transform: uppercase;
+#footer .estilo-lista {
+  list-style: none;
+}
+
+#footer .ubicacionMapa {
+  background-color: whitesmoke;
+  text-align: right;
+}
+
+#footer .ubicacionContacto {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  text-align: left;
+  background-color: whitesmoke;
+}
+
+#footer .ubicacionRedes ul {
+  display: flex;
+  list-style: none;
+  background-color: whitesmoke;
+}
+
+#footer .ubicacionRedes ul li {
+  font-size: 2.1rem;
+  list-style: none;
+  background-color: whitesmoke;
+  margin: 0px 10px;
 }
 
 .footer__copyrigth {
@@ -151,11 +160,6 @@ h3 {
   text-align: center;
   font-weight: bold;
 }
-
-#footer .estilo-lista {
-  list-style: none;
-}
-
 /*FIN FOOTER*/
 
 .grid-areas-de-practica {
