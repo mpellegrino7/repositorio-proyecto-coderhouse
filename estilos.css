@@ -5,36 +5,6 @@
   text-decoration: none;
 }
 /*HEADER*/
-/* header {
-   display: flex;
-  height: 100px;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: black;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-#header .header__logo {
-  width: auto;
-  background-color: #fff;
-}
-#header .header__menu {
-  display: flex;
-  list-style: none;
-}
-
-#header .header__menu ul {
-  display: flex;
-  list-style: none;
-}
-
-#header .header__menu ul li {
-  margin: 0 15px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #fff;
-}*/
 
 #header {
   background-color: black;
@@ -42,7 +12,7 @@
 #header .navbar-collapse {
   justify-content: end;
 }
-/*ver porque no funciona*/
+
 #header .nav-bar-dark .navbar-nav .nav-link {
   color: #fff;
   font-size: 1.4rem;
@@ -52,28 +22,16 @@
 /*FIN HEADER*/
 
 /*MAIN*/
-#main .main__section {
-  display: grid;
-  grid-template-columns: 1 fr 1 fr;
-  grid-template-rows: 1 fr 1 fr;
-  gap: 0px;
-  justify-items: center;
-  padding: 20px;
-}
-
-.bordesRedondeados {
-  border-radius: 20%;
-}
 
 #main .fuenteParrafo {
   font-style: oblique;
-  border-style: double;
-  font-size: larger;
-  color: white;
+  border-style: groove;
   border-color: black;
+  font-size: larger;
+  color: black;
   text-align: center;
-  background-image: url(imagenes/foto-fondo-parrafo.jpg);
-  height: 200px;
+  padding: 50px;
+  margin: 100px;
 }
 
 #el-estudio .fuenteParrafo {
@@ -84,11 +42,7 @@
   border-color: black;
   text-align: center;
   background-image: url(imagenes/foto-fondo-parrafo.jpg);
-  height: 200px;
-}
-
-#el-estudio .fuente-imagen-nosotros {
-  padding: 20px;
+  height: 290px;
 }
 
 .form {
@@ -114,6 +68,29 @@ h3 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
+
+.grid-areas-de-practica {
+  display: grid;
+  gap: 60 px;
+  padding: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 70px;
+}
+
+.grid-areas-de-practica .imagenes-area-de-practica {
+  background-color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  padding: 10px;
+}
+
+.grid-areas-de-practica .imagenes-area-de-practica img {
+  width: 25%;
+  height: auto;
+}
+
+/*FIN MAIN*/
 
 /*FOOTER*/
 #footer {
@@ -162,27 +139,6 @@ h3 {
 }
 /*FIN FOOTER*/
 
-.grid-areas-de-practica {
-  display: grid;
-  gap: 60 px;
-  padding: 50px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(3, auto);
-  row-gap: 70px;
-}
-
-.grid-areas-de-practica .imagenes-area-de-practica {
-  background-color: #fff;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: black;
-  padding: 10px;
-}
-
-.grid-areas-de-practica .imagenes-area-de-practica img {
-  width: 25%;
-  height: auto;
-}
-
 /*RESPONSIVE*/
 @media screen and (max-width: 768px) {
   #header .header__menu {
@@ -200,6 +156,8 @@ h3 {
     padding: 20px;
   }
 }
+
+/*FIN RESPONSIVE*/
 
 /*TRANSITION AREAS DE PRACTICAS*/
 main .grid-areas-de-practica .imagenes-area-de-practica {
