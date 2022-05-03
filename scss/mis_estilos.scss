@@ -36,13 +36,13 @@
 #el-estudio {
   .fuenteParrafo {
     font-style: oblique;
-    border-style: double;
-    font-size: larger;
-    color: white;
+    border-style: groove;
     border-color: black;
+    font-size: larger;
+    color: black;
     text-align: center;
-    background-image: url(imagenes/foto-fondo-parrafo.jpg);
-    height: 290px;
+    padding: 50px;
+    margin: 100px;
   }
 }
 .form {
@@ -53,8 +53,18 @@
   height: 498px;
   margin: 0 auto;
 }
-h2 {
+
+#main .titulo-principal {
+  font-size: 90px;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+
+#main .h2 {
   font-family: 'Black Han Sans', sans-serif;
+  text-align: center;
 }
 h4 {
   font-family: Arial, Helvetica, sans-serif;
@@ -64,24 +74,7 @@ h3 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
-.grid-areas-de-practica {
-  display: grid;
-  gap: 60 px;
-  padding: 50px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(3, auto);
-  row-gap: 70px;
-  .imagenes-area-de-practica {
-    background-color: #fff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
-    padding: 10px;
-    img {
-      width: 25%;
-      height: auto;
-    }
-  }
-}
+
 #footer {
   display: flex;
   background-color: whitesmoke;
@@ -90,17 +83,15 @@ h3 {
   align-items: center;
   padding: 10px;
   margin: 0px;
+
   .estilo-lista {
     list-style: none;
   }
-  .ubicacionMapa {
-    background-color: whitesmoke;
-    text-align: right;
-  }
+
   .ubicacionContacto {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
-    text-align: left;
+    text-align: start;
     background-color: whitesmoke;
   }
   .ubicacionRedes {
@@ -117,9 +108,10 @@ h3 {
     }
   }
 }
+
 .footer__copyrigth {
   background-color: whitesmoke;
-  text-align: center;
+  text-align: start;
   font-weight: bold;
 }
 main {
@@ -133,18 +125,144 @@ main {
     }
   }
 }
+
+/*main areas de práctica*/
+
+#main_areas_de_practica .container__card {
+  max-width: 1200px;
+  padding: 50px;
+  padding-bottom: 40px;
+  margin: auto;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#main_areas_de_practica .card {
+  width: 300px;
+  position: relative;
+  margin: 20px;
+  font-family: monospace;
+  transition: all 300ms;
+  border-radius: 20px;
+}
+
+#main_areas_de_practica .card:hover {
+  box-shadow: 1px 1px 20px -10px #20202049;
+}
+
+#main_areas_de_practica .card:hover .info__description {
+  margin-top: 0;
+  border-radius: 0px 0px 20px 20px;
+}
+
+#main_areas_de_practica .card:hover .icon {
+  margin-top: -110px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+#main_areas_de_practica .icon {
+  width: 100%;
+  height: 220px;
+  background: #eff3f5;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  transition: all 400ms cubic-bezier(0.5, 0, 0, 1);
+  border-radius: 20px;
+}
+
+#main_areas_de_practica .icon img {
+  transition: all 400ms cubic-bezier(0.5, 0, 0, 1);
+}
+
+#main_areas_de_practica .info__description {
+  width: 100%;
+  height: 220px;
+  color: #474747;
+  background: #eff3f5;
+  padding: 20px;
+  margin-top: -220px;
+  transition: all 400ms cubic-bezier(0.5, 0, 0, 1);
+  border-radius: 20px;
+}
+
+#main_areas_de_practica .info__description h3 {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+#main_areas_de_practica .info__description input {
+  margin-top: 20px;
+  padding: 10px 40px;
+  background: #2196f3;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 1px 30px -5px #20202049;
+  transition: box-shadow 300ms;
+}
+
+#main_areas_de_practica .info__description input:hover {
+  box-shadow: 1px 1px 30px -5px #20202070;
+}
+
+#main_areas_de_practica .imagenes-area-de-practica {
+  width: 25%;
+  height: auto;
+}
+
+/*mapa contacto - map-responsive*/
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 30%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/*FIN - mapa contacto - map-responsive*/
+
+.titulos {
+  font-family: 'Black Han Sans', sans-serif;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.titulos-h5 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 80px;
+  color: rgb(122, 12, 12);
+  text-decoration-line: underline;
+}
+
 @media screen and (max-width: 768px) {
-  #header {
-    .header__menu {
-      display: none;
-    }
-  }
   #footer {
     display: inline-block;
     background-color: whitesmoke;
     justify-content: space-between;
     height: 250px;
     align-items: center;
+
     padding: 20px;
   }
+}
+
+.logo-footer {
+  background-color: whitesmoke;
 }
