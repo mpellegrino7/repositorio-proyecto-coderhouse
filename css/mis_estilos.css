@@ -103,7 +103,10 @@ h3 {
 #footer .ubicacionContacto {
   font-family: Arial, Helvetica, sans-serif;
   color: black;
-  text-align: start;
+  background-color: whitesmoke;
+}
+
+#footer .logo-footer {
   background-color: whitesmoke;
 }
 
@@ -126,16 +129,6 @@ h3 {
   background-color: whitesmoke;
   text-align: start;
   font-weight: bold;
-}
-
-main .grid-areas-de-practica .imagenes-area-de-practica {
-  -webkit-transition: all 2s;
-  transition: all 2s;
-}
-
-main .grid-areas-de-practica .imagenes-area-de-practica:hover {
-  height: 150px;
-  width: 150px;
 }
 
 /*main areas de práctica*/
@@ -251,7 +244,8 @@ main .grid-areas-de-practica .imagenes-area-de-practica:hover {
   height: auto;
 }
 
-/*mapa contacto - map-responsive*/
+/*main areas de práctica*/
+/*mapa contacto*/
 .map-responsive {
   overflow: hidden;
   padding-bottom: 30%;
@@ -267,7 +261,7 @@ main .grid-areas-de-practica .imagenes-area-de-practica:hover {
   position: absolute;
 }
 
-/*FIN - mapa contacto - map-responsive*/
+/*FIN - mapa contacto */
 .titulos {
   font-family: 'Black Han Sans', sans-serif;
   text-align: center;
@@ -276,10 +270,10 @@ main .grid-areas-de-practica .imagenes-area-de-practica:hover {
 
 .titulos-h5 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 80px;
-  color: #7a0c0c;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  font-size: 60px;
+  color: white;
+  background-color: #7a0c0c;
+  border-style: solid;
 }
 
 @media screen and (max-width: 768px) {
@@ -289,15 +283,24 @@ main .grid-areas-de-practica .imagenes-area-de-practica:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    height: 250px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 20px;
+    text-align: center;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
   }
-}
-
-.logo-footer {
-  background-color: whitesmoke;
+  #footer .ubicacionRedes ul li {
+    text-align: center;
+    margin: auto;
+  }
+  .footer__copyrigth {
+    text-align: center;
+  }
+  #main .titulo-principal {
+    font-size: 50px;
+  }
+  .logo-footer {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=mis_estilos.css.map */

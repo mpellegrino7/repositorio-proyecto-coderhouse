@@ -92,9 +92,13 @@ h3 {
   .ubicacionContacto {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
-    text-align: start;
     background-color: whitesmoke;
   }
+
+  .logo-footer {
+    background-color: whitesmoke;
+  }
+
   .ubicacionRedes {
     ul {
       display: flex;
@@ -114,17 +118,6 @@ h3 {
   background-color: whitesmoke;
   text-align: start;
   font-weight: bold;
-}
-main {
-  .grid-areas-de-practica {
-    .imagenes-area-de-practica {
-      transition: all 2s;
-      &:hover {
-        height: 150px;
-        width: 150px;
-      }
-    }
-  }
 }
 
 /*main areas de práctica*/
@@ -219,8 +212,9 @@ main {
   width: 25%;
   height: auto;
 }
+/*main areas de práctica*/
 
-/*mapa contacto - map-responsive*/
+/*mapa contacto*/
 
 .map-responsive {
   overflow: hidden;
@@ -237,7 +231,7 @@ main {
   position: absolute;
 }
 
-/*FIN - mapa contacto - map-responsive*/
+/*FIN - mapa contacto */
 
 .titulos {
   font-family: 'Black Han Sans', sans-serif;
@@ -247,9 +241,10 @@ main {
 
 .titulos-h5 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 80px;
-  color: rgb(122, 12, 12);
-  text-decoration-line: underline;
+  font-size: 60px;
+  color: white;
+  background-color: rgb(122, 12, 12);
+  border-style: solid;
 }
 
 @media screen and (max-width: 768px) {
@@ -257,13 +252,27 @@ main {
     display: inline-block;
     background-color: whitesmoke;
     justify-content: space-between;
-    height: 250px;
-    align-items: center;
-
-    padding: 20px;
+    text-align: center;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
   }
-}
 
-.logo-footer {
-  background-color: whitesmoke;
+  #footer .ubicacionRedes ul li {
+    text-align: center;
+    margin: auto;
+  }
+
+  .footer__copyrigth {
+    text-align: center;
+  }
+
+  #main .titulo-principal {
+    font-size: 50px;
+  }
+
+  .logo-footer {
+    text-align: center;
+  }
 }
