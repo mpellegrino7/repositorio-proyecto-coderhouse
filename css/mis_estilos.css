@@ -49,8 +49,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   position: relative;
-  width: 740px;
-  height: 498px;
+  height: 340px;
   margin: 0 auto;
 }
 
@@ -246,14 +245,14 @@ h3 {
 
 /*main areas de práctica*/
 /*mapa contacto*/
-.map-responsive {
+.mapa-contacto {
   overflow: hidden;
   padding-bottom: 30%;
   position: relative;
   height: 0;
 }
 
-.map-responsive iframe {
+.mapa-contacto iframe {
   left: 0;
   top: 0;
   height: 100%;
